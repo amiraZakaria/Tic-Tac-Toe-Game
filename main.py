@@ -1,12 +1,4 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 """Assigning values to the grid
 The grid will look like this:
   0,0 | 0,1 | 0,2
@@ -48,7 +40,7 @@ def check_win(mark):
                     count2 += 1
                     if count2 == 3:
                         return True
-                if (grid[i][j] ==mark and grid[j][i])==mark and grid[N//2][N//2]==mark:
+                if grid[0][N-1]== grid[N-1][0]==grid[N//2][N//2]==mark:
                     count4+=1
                     if count4 ==3:
                         return True
@@ -130,8 +122,4 @@ while True:
 	if c not in 'yY':
 		break
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
