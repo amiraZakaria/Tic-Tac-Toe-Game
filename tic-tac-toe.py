@@ -41,9 +41,7 @@ def check_win(mark):
                     if count2 == 3:
                         return True
                 if grid[0][N-1]== grid[N-1][0]==grid[N//2][N//2]==mark:
-                    count4+=1
-                    if count4 ==3:
-                        return True
+                     return True
 
 #This function checks if row or column or diagonal is full with same characters
 def check_tie(mark):
